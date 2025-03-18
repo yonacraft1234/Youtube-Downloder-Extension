@@ -28,11 +28,7 @@ This project is a Chrome extension designed to download YouTube videos in MP4 or
    ```
 
 2. **Install Python Dependencies**
-   Assuming the API relies on common Python libraries for YouTube downloading (e.g., `pytube` or `yt-dlp`), install the required packages using `pip`. (Note: Adjust this command based on the actual dependencies listed in a `requirements.txt` file if available in the repository.)
-   ```bash
-   pip install pytube
-   ```
-   Alternatively, if a `requirements.txt` file is provided:
+  
    ```bash
    pip install -r requirements.txt
    ```
