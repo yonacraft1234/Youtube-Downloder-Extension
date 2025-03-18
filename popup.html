@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube Downloader</h1>
+        </header>
+        
+        <main>
+            <div id="status-message" class="hidden"></div>
+            
+            <div class="form-group">
+                <label for="video-url">YouTube URL:</label>
+                <input type="text" id="video-url" placeholder="https://www.youtube.com/watch?v=...">
+                <button id="fetch-btn" class="fetch-btn">Fetch Video</button>
+            </div>
+            
+            <div class="video-info hidden" id="video-info">
+                <div id="video-title" class="title">Video Title</div>
+                <div id="thumbnail" class="thumbnail"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="filename">File name:</label>
+                <input type="text" id="filename" placeholder="Enter file name">
+            </div>
+            
+            <div class="form-group">
+                <div class="label">Format:</div>
+                <div class="format-options">
+                    <label>
+                        <input type="radio" name="format" value="mp4" checked>
+                        <span class="radio-btn">MP4</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="format" value="mp3">
+                        <span class="radio-btn">MP3</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="quality-group" id="quality-selector">
+                <div class="label">Quality:</div>
+                <select id="quality">
+                    <option value="highest">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="lowest">Low</option>
+                </select>
+            </div>
+            
+            <button id="download-btn" class="download-btn" disabled>Download</button>
+        </main>
+        
+        <footer>
+            <p>For personal use only. Respect copyright laws.</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
