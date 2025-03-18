@@ -1,0 +1,13 @@
+# requirements.txt for Youtube-Downloder-Extension
+
+# Library for downloading YouTube videos and audio
+pytube==15.0.0
+
+# Web framework for the API (assuming a simple server to handle requests)
+flask==2.3.3
+
+# HTTP client library (optional, for API requests or testing)
+requests==2.31.0
+
+# For handling CORS if the extension communicates with the API
+flask-cors==4.0.0
